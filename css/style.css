@@ -1,0 +1,221 @@
+body{
+    font-family: "Myriad Pro", sans-serif !important;
+}
+.container-fluid{
+    background-color: #282a2e;
+    padding: 0px;
+}
+
+.navbar{
+    background-color: #282a2e !important;
+}
+.navbar ul li .nav-link{
+    color: #fff !important;
+}.navbar ul li:nth-child(3) .nav-link{
+    color: #97c248 !important;
+}
+.navbar ul li .nav-link:hover{
+    color: #97c248 !important;
+}
+.navbar-nav .nav-link {
+    padding-right: 2rem !important;
+}
+
+
+/* Start of Navbar hamburger animation*/
+.navbar-toggler {
+    border: none;
+    background: transparent !important;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    background: transparent !important;
+}
+
+.navbar-toggler .icon-bar {
+    background-color: #fff;
+    transform: rotate(0deg) translate(0px, 0px);
+    transition: ease all .2s;
+}
+
+.navbar-toggler .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+
+.navbar-toggler .icon-bar+.icon-bar {
+    margin-top: 4px;
+}
+
+.icon-bar:nth-child(2) {
+    width: 16px;
+    transition: ease all .2s;
+}
+
+.navbar-toggler:hover>.icon-bar:nth-child(2) {
+    width: 22px;
+    transition: ease all .2s;
+}
+
+.navbar-toggler:active>.icon-bar:nth-child(2) {
+    width: 22px;
+    transition: ease all .2s;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 4px);
+    transition: ease all .2s;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(2) {
+    opacity: 0;
+    transition: ease all .2s;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(3) {
+    transform: rotate(-45deg) translate(4px, -4px);
+    transition: ease all .2s;
+}
+/*End of Navbar hamburger animation*/
+
+/*Carousel Caption*/
+.carousel-caption{
+    top: 40%;
+    left: -15%;
+}
+.carousel-caption p{
+    font-size: 35px;
+}
+
+input {
+    outline: none;
+}
+input[type=search] {
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    font-family: inherit;
+    font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+    display: none;
+}
+
+
+input[type=search] {
+    background: #282a2e url('../img/icon.png') no-repeat 9px center;
+    padding: 9px 10px 9px 32px;
+    width: 55px;
+
+
+    -webkit-border-radius: 10em;
+    -moz-border-radius: 10em;
+    border-radius: 10em;
+
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+}
+input[type=search]:focus {
+    width: 130px;
+    -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+    -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+    box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+
+input:-moz-placeholder {
+    color: #fff;
+}
+input::-webkit-input-placeholder {
+    color: #fff;
+}
+
+/* Demo 2 */
+#demo-2 input[type=search] {
+    content: '\f002';
+    width: 15px;
+    padding-left: 10px;
+    color: transparent;
+    cursor: pointer;
+}
+
+#demo-2 input[type=search]:focus {
+    width: 130px;
+    padding-left: 32px;
+    color: #fff;
+    cursor: auto;
+}
+#demo input:-moz-placeholder {
+    color: transparent;
+}
+#demo input::-webkit-input-placeholder {
+    color: transparent;
+}
+/*Demo*/
+
+/*Start Feature1*/
+.feature1{
+    color: #fff;
+}
+.feature1 .title{
+    font-size: 36px;
+}
+.feature1 h3{
+    padding-top: 15px;
+}
+/*End of Feature1*/
+
+/*Start Feature2*/
+.feature2{
+    background-color: #4b3f34;
+    height: 430px;
+}
+.feature2 p{
+    color: #fff;
+    font-size: 60px;
+    letter-spacing: 4px;
+}
+.feature2 .col-lg-12{
+    top: 90%;
+}
+.feature2 .btn:nth-child(1){
+    margin-right: 10px;
+    background-color: #b0cd3b;
+    border-bottom: 4px solid #798f21;
+    padding: 15px 40px 15px 40px;
+    color: #fff;
+}
+.feature2 .btn:nth-child(2){
+    padding: 15px 40px 15px 40px;
+    background-color: #1bbc9d;
+    border-bottom: 4px solid #1f937d;
+    color: #fff;
+}
+@media (max-width: 991.98px) {
+    .navbar ul li:last-child{
+        margin-right: 2rem !important;
+    }
+
+}
+@media (max-width: 768px) {
+    .carousel-caption{
+        display: none !important;
+    }
+    .feature2 .col-lg-12{
+        top: 30%;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 575.98px) {
+    .navbar ul li:last-child{
+        margin-right: 2rem !important;
+    }
+
+}
+
