@@ -1,5 +1,6 @@
 body{
     font-family: "Myriad Pro", sans-serif !important;
+    background-color: #282a2e;
 }
 .container-fluid{
     background-color: #282a2e;
@@ -109,6 +110,7 @@ input[type=search] {
     background: #282a2e url('../img/icon.png') no-repeat 9px center;
     padding: 9px 10px 9px 32px;
     width: 55px;
+    color: #fff;
 
 
     -webkit-border-radius: 10em;
@@ -199,12 +201,12 @@ input::-webkit-input-placeholder {
 
 /*Start Feature3*/
 .feature3{
-    background-color: #282a2e;
+    color: #fff;
 }
-.feature3 ul{
+.feature3 .content ul{
     list-style: none;
 }
-.feature3 li{
+.feature3 .content ul li{
     background-color: #313338;
     border: 1px solid #313338;
     margin-right: 10px;
@@ -212,19 +214,149 @@ input::-webkit-input-placeholder {
     cursor: pointer;
 }
 
-.feature3 li:hover{
+.feature3 ul li:hover{
     background-color: #1bbc9d;
     border: 1px solid #1bbc9d;
     margin-right: 10px;
-    padding: 10px 15px 10px 15px;
 }
 
-.feature3 ul li a{
+.feature3 .content ul li a{
     color: #fff;
     text-decoration: none;
 }
+.feature3  .boxes ul{
+    list-style: none;
+    flex-flow: row wrap;
+}
+.feature3 .boxes ul li{
+    width: 224px;
+    height: 224px;
+    background-color: #313337;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.feature3 .boxes .box{
+    width: 170px;
+    height: 170px;
+    background-color: #000;
+    color: #fff;
+}
+.feature3 .blackbox{
+    padding: 25px;
+}
+.feature3 .arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
 
+    border-top: 20px solid #aaca29;
+}
+.feature4{
+    background-color: #4b3f34;
+    height: 430px;
+    color: #ffffff;
+}
+.feature4 .col-lg-12{
+    top: 90%
+}
+.feature4 p{
+    font-size: 40px;
 
+}
+.feature4 .title{
+    font-size: 60px;
+}
+.feature5 .content, .content2{
+    flex-flow: row wrap;
+}
+
+.feature5 ul{
+    list-style: none;
+    background-color: #313337;
+    border: 1px solid #313337;
+    border-radius: 5px;
+    color: #b6b6b6;
+    padding: 0px;
+    margin-right: 20px;
+    width: 260px;
+    cursor: pointer;
+}
+.feature5 h2{
+    color: #fff;
+}
+.feature5 ul:nth-child(2){
+    background-color: #fff;
+}
+.feature5 ul li{
+    padding-bottom: 10px;
+}
+.feature5 ul li:nth-child(7){
+    padding-bottom: 30px;
+}
+.feature5 ul li:last-child{
+    padding-bottom: 30px;
+}
+.feature5 ul .titlebox{
+    padding: 20px 0px 20px 0px;
+}
+.feature5 ul .pricebox{
+    background-color: #1bbc9d;
+    border-bottom: 4px solid #17987f;
+    color: #ffffff;
+    margin-bottom: 30px;
+    padding-top: 10px;
+
+}
+.feature5 ul li .boldtext{
+    font-weight: bold;
+}
+.feature5 ul li button{
+    background-color: #b0cd3b;
+    border-bottom: 4px solid #798f21;
+    color: #fff;
+    padding: 10px 30px 10px 30px;
+}
+.feature5 .content2 ul{
+    width: 190px;
+}
+.feature5 .content2 ul{
+   background-color: #fff;
+}
+.feature5 .content2 ul:first-child .pricebox{
+   background-color: #424242;
+   border-bottom: 4px solid #2d2d2d;
+
+}
+.feature5 .content2 ul:first-child button{
+   background-color: #e4e4e4;
+   border-bottom: 4px solid #c1c1c1;
+
+}
+.feature5 .content2 ul:nth-child(2) .pricebox{
+   background-color: #74b0a4;
+   border-bottom: 4px solid #55857b;
+}
+.feature5 .content2 ul:nth-child(2) button{
+    background-color: #74b0a4;
+    border-bottom: 4px solid #55857b;
+}
+.feature5 .content2 ul:nth-child(3) .pricebox{
+   background-color: #b6c380;
+   border-bottom: 4px solid #8e9865;
+}
+.feature5 .content2 ul:nth-child(3) button{
+    background-color: #b6c380;
+    border-bottom: 4px solid #8e9865;
+}
+.feature5 .content2 ul:nth-child(4) .pricebox{
+    background-color: #e4e4e4;
+    border-bottom: 4px solid #c1c1c1;
+}
+.feature5 .content2 ul:nth-child(4) button{
+    background-color: #424242;
+    border-bottom: 4px solid #2d2d2d;
+}
 @media (max-width: 991.98px) {
     .navbar ul li:last-child{
         margin-right: 2rem !important;
@@ -245,6 +377,9 @@ input::-webkit-input-placeholder {
 @media (max-width: 575.98px) {
     .navbar ul li:last-child{
         margin-right: 2rem !important;
+    }
+    .feature2 .col-lg-12, .feature4 .col-lg-12{
+        top: 10%
     }
 
 }
