@@ -81,24 +81,24 @@
         <div class="container text-center">
             <div class="title mb-5">Our Services</div>
             <div class="row text-center p-5">
-                <div class="col-md">
+                <div class="col-lg">
                     <img src="img/uidesign.png" alt="">
                     <h3>WebDesign</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu varius dui. Nunc id
                         scelerisque ligula. </p>
                 </div>
-                <div class="col-md">
+                <div class="col-lg">
                     <img src="img/webdesign.png" alt="">
                     <h3>UIDesign</h3>
                     <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
                         egestas. </p>
                 </div>
-                <div class="col-md">
+                <div class="col-lg">
                     <img src="img/prototype.png" alt="">
                     <h3>Prototype</h3>
                     <p>Sed vestibulum mi quis est lacinia tempor. Praesent vitae commodo tellus. Cras eu est sem. </p>
                 </div>
-                <div class="col-md">
+                <div class="col-lg">
                     <img src="img/photography.png" alt="">
                     <h3>Photography</h3>
                     <p>Donec tempus lacinia purus ut tincidunt. Nunc vel feugiat leo. Nunc iaculis hendrerit
@@ -134,29 +134,16 @@
                </ul>
            </div>
 
-        <div class="boxes">
-            <ul class="d-flex flex-row justify-content-center">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-        <div class="boxes">
-            <ul class="d-flex flex-row justify-content-center">
-                <li></li>
-                <li></li>
-                <li class="blackbox">
-                    <div class="box pt-4">
-                        <h5>Clean night sky</h5>
-                        <p>photography</p>
-                        <span><img src="img/Chat.png" alt=""> 53</span>
-                        <span><img src="img/Heart.png" alt=""> 53</span>
-                    </div>
-                </li>
-                <li></li>
-            </ul>
-        </div>
+                <div class="grid">
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                </div>
 
            <div class="arrowbottom text-center">
                <h4>Load More</h4>
@@ -263,7 +250,13 @@
 
 </div>
 
-
+<script>
+    $('.grid').masonry({
+        itemSelector: '.grid-item',
+        columnWidth: 160,
+        fitWidth: true
+    });
+</script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
