@@ -428,6 +428,7 @@ input[type=search]:focus {
 }
 .feature5 .comment{
     color: #424242;
+    overflow: hidden;
 }
 .feature5 .comment .title{
     color: #fff;
@@ -441,13 +442,44 @@ input[type=search]:focus {
 }
 
 .feature5 .comment .content{
-    width: 600px;
     padding: 0px 10px 0px 10px;
+}
+.subtitle {
+    margin: 0 0 1em 0;
+}
+
+.fancy span {
+    display: inline-block;
+    position: relative;
+}
+.fancy span:before,
+.fancy span:after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: #424242;
+    top: 40%;
+    width: 350px;
+}
+.fancy span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+.fancy span:after {
+    left: 100%;
+    margin-left: 15px;
 }
 @media (max-width: 991.98px) {
     .navbar ul li:last-child{
         margin-right: 2rem !important;
     }
+    .feature5 .comment .content{
+        padding: 0px 10px 0px 10px;
+    }
+    .feature5 .comment .quote{
+        font-size: 50px;
+    }
+
 
 }
 @media (max-width: 768px) {
@@ -483,6 +515,13 @@ input[type=search]:focus {
     .feature4 p {
         font-size: 35px;
     }
+    .feature5 .comment .content{
+        padding: 0px 10px 0px 10px;
+    }
+    .feature5 .comment .quote{
+        font-size: 40px;
+    }
+
 
 
 }
