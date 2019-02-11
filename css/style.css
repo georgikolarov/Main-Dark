@@ -2,9 +2,8 @@ body {
     background-color: #282a2e;
 }
 
-h2 {
+.titleFeature {
     text-transform: capitalize;
-    font-family: "Roboto Light", sans-serif;
     font-size: 36px;
 }
 
@@ -13,12 +12,23 @@ h2 {
     padding: 0px;
 }
 
+.fontRobotoLight {
+    font-family: "Roboto Light", sans-serif;
+    font-weight: 200;
+}
+
+.fontRobotoMedium {
+    font-family: "Roboto Medium", sans-serif;
+}
+
 .navbar {
     background-color: #282a2e !important;
 }
 
 .navbar ul li .nav-link {
+    font-family: "Roboto, Regular", sans-serif;
     color: #fff !important;
+    font-size: 16px;
 }
 
 .navbar ul li:nth-child(3) .nav-link {
@@ -97,12 +107,40 @@ h2 {
 /*Carousel Caption*/
 
 .carousel-caption {
-    top: 40%;
-    left: -15%;
+    position: absolute;
+    right: 15%;
+    /* bottom: 20px; */
+    top: 50%;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: left;
+    transform: translate(0%, -50%);
+    /* text-align: center; */
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-size: 100% 100%;
+}
+
+.carousel-caption h1 {
+    font-size: 60px;
+    line-height: 0.5;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
 }
 
 .carousel-caption p {
-    font-size: 35px;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: 3px;
+    margin: 0;
 }
 
 input {
@@ -141,7 +179,7 @@ input[type=search]:focus {
     box-shadow: 0 0 5px rgba(109, 207, 246, .5);
 }
 
-/* Demo 2 */
+/* Search */
 
 #demo-2 input[type=search] {
     content: '\f002';
@@ -166,62 +204,106 @@ input[type=search]:focus {
     color: transparent;
 }
 
-/*Demo*/
+/*Seatch*/
 
 /*Start Feature1*/
 
 .feature1 {
+    padding: 55px 0 65px 0;
     color: #fff;
+}
+
+.feature1 .col-lg {
+    padding: 0 30px 0 30px;
 }
 
 .feature1 .title {
     font-size: 36px;
+    padding-bottom: 50px;
+    margin: 0;
+}
+
+.feature1 img {
+    padding-bottom: 20px;
 }
 
 .feature1 h3 {
-    padding-top: 15px;
+    font-size: 24px;
 }
 
-/*End of Feature1*/
+.feature1 p {
+    font-family: "Arial Regular", sans-serif;
+    font-size: 13px;
+    color: #8e8e90;
+}
 
 /*Start Feature2*/
 
 .feature2 {
-    background-color: #4b3f34;
     height: 430px;
+    background-color: #4b3f34;
 }
 
-.feature2 p {
+.feature2 h2 {
     color: #fff;
     font-size: 60px;
     letter-spacing: 4px;
+    margin-bottom: 25px;
 }
 
 .feature2 .col-lg-12 {
     top: 90%;
 }
 
+.feature2 .btn {
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
 .feature2 .btn:nth-child(1) {
     margin-right: 10px;
     background-color: #b0cd3b;
-    border-bottom: 4px solid #798f21;
-    padding: 15px 40px 15px 40px;
+    width: 131px;
+    height: 46px;
     color: #fff;
+}
+
+.feature2 .btn:nth-child(1):hover {
+    border-bottom: 4px solid #798f21;
 }
 
 .feature2 .btn:nth-child(2) {
-    padding: 15px 40px 15px 40px;
+    width: 131px;
+    height: 46px;
     background-color: #1bbc9d;
-    border-bottom: 4px solid #1f937d;
     color: #fff;
 }
 
-/* End of Feature2*/
+.feature2 .btn:nth-child(2):hover {
+    border-bottom: 4px solid #1f937d;
+}
 
 /*Start Feature3*/
 
 .feature3 {
+    padding: 65px 0 50px 0;
     color: #fff;
+}
+
+.feature3 h2 {
+    margin-bottom: 20px;
+}
+
+.feature3 .buttons {
+    padding-bottom: 45px;
+}
+
+.feature3 h4 {
+    font-size: 16px;
+}
+
+.feature3 .boxes {
+    padding-bottom: 50px;
 }
 
 /* content mansory grid*/
@@ -231,15 +313,11 @@ input[type=search]:focus {
     left: 2%;
 }
 
-/* clearfix */
-
 .content .grid:after {
     content: '';
     display: block;
     clear: both;
 }
-
-/* ---- grid-item ---- */
 
 .content .grid-item {
     width: 140px;
@@ -288,15 +366,11 @@ input[type=search]:focus {
     margin: 0 auto;
 }
 
-/* clearfix */
-
 .boxes .grid:after {
     content: '';
     display: block;
     clear: both;
 }
-
-/* ---- grid-item ---- */
 
 .boxes .grid-item {
     width: 180px;
@@ -332,8 +406,8 @@ input[type=search]:focus {
     -webkit-transform: rotate(45deg);
     border-left: none;
     border-top: none;
-    border-right: 2px #fff solid;
-    border-bottom: 2px #fff solid;
+    border-right: 2px #aaca29 solid;
+    border-bottom: 2px #aaca29 solid;
 }
 
 .arrow:before {
@@ -344,8 +418,8 @@ input[type=search]:focus {
     margin: -10px 0 0 -10px;
     border-left: none;
     border-top: none;
-    border-right: 1px #fff solid;
-    border-bottom: 1px #fff solid;
+    border-right: 1px #aaca29 solid;
+    border-bottom: 1px #aaca29 solid;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-name: arrow;
@@ -369,6 +443,10 @@ input[type=search]:focus {
     color: #ffffff;
 }
 
+.feature4 h2 {
+    font-size: 60px;
+}
+
 .feature4 p,
 .feature6 p,
 .feature8 p {
@@ -379,6 +457,7 @@ input[type=search]:focus {
 .feature6 .title,
 .feature8 .title {
     font-size: 60px;
+    letter-spacing: 4px;
 }
 
 .feature5 .content,
@@ -754,9 +833,36 @@ input[type=search]:focus {
 
 /*Start Feature9 */
 
+.col-lg-8,
+.col-lg-4 {
+    padding: 0 20px 0 20px;
+}
+
+address p,
+.btn {
+    font-family: "Roboto Medium", sans-serif;
+}
+
+address p {
+    line-height: normal;
+    font-size: 16px;
+    color: #989898;
+    font-weight: bold;
+    margin-bottom: 13px;
+}
+
+address p:nth-child(3) {
+    margin-bottom: 30px;
+}
+
 .feature9 {
+    padding-top: 65px;
     color: #fff;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
+}
+
+.feature9 h2 {
+    margin-bottom: 75px;
 }
 
 .form-control {
@@ -776,10 +882,14 @@ input[type=search]:focus {
     margin-top: 20px;
     border-radius: 0px !important;
     padding: 10px 15px;
-    font-family: "Roboto Medium", sans-serif;
     font-size: 14px;
     background-color: #1bbc9d;
     color: #fff;
+}
+
+.btnPurchaise {
+    margin-top: 4px !important;
+    padding: 10px 20px !important;
 }
 
 .feature9 .btn:hover {
@@ -809,13 +919,22 @@ input[type=search]:focus {
 }
 
 .feature9 .moreInfo {
-    margin-left: 40px;
     width: 200px;
+}
+
+.mail>p,
+.moreInfo>p {
+    font-family: "Roboto Bold", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 /*End Feature9*/
 
 @media (max-width: 992px) {
+    .feature1 .col-lg {
+        padding-bottom: 30px;
+    }
     .navbar ul li:last-child {
         margin-right: 2rem !important;
     }
@@ -827,6 +946,9 @@ input[type=search]:focus {
     }
     .feature5 ul {
         margin-right: 0px;
+    }
+    .feature9 .col-lg-8 {
+        padding-bottom: 20px;
     }
 }
 
