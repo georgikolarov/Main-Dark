@@ -437,7 +437,8 @@ input[type=search]:focus {
 
 .feature4,
 .feature6,
-.feature8 {
+.feature8,
+.feature10 {
     background-color: #4b3f34;
     height: 430px;
     color: #ffffff;
@@ -447,16 +448,17 @@ input[type=search]:focus {
 .feature6 p,
 .feature8 p {
     font-size: 40px;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     line-height: 1;
     margin: 0;
 }
 
 .feature4 .title,
 .feature6 .title,
-.feature8 .title {
+.feature8 .title,
+.feature10 .title {
     font-size: 60px;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     line-height: 1;
     margin-bottom: 0;
 }
@@ -622,7 +624,7 @@ input[type=search]:focus {
 }
 
 .feature5 .comment {
-    color: #424242;
+    color: #696969;
     overflow: hidden;
 }
 
@@ -810,7 +812,8 @@ input[type=search]:focus {
     left: 50%;
     bottom: 0px;
     transform: translateX(-50%);
-    font-size: 1.1rem;
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
     font-weight: bold;
     color: #fff;
     line-height: 1;
@@ -836,7 +839,7 @@ input[type=search]:focus {
     content: '50%';
 }
 
-.chart-skills li {
+.chart-skills div {
     position: absolute;
     top: 100%;
     left: 0;
@@ -854,43 +857,33 @@ input[type=search]:focus {
     backface-visibility: hidden;
 }
 
-.webdesign .chart-skills li:nth-child(1) {
+.chart-skills div {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1bbc9d+0,aaca29+100 */
+    border-color: rgba(27, 188, 157, 1);
+}
+
+.webdesign .chart-skills div {
     z-index: 4;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#aaca29+0,1bbc9d+100 */
-    border-color: rgb(170, 202, 41);
-    /* Old browsers */
-    border-color: -moz-radial-gradient(center, ellipse cover, rgba(170, 202, 41, 1) 0%, rgba(27, 188, 157, 1) 100%);
-    /* FF3.6-15 */
-    border-color: -webkit-radial-gradient(center, ellipse cover, rgba(170, 202, 41, 1) 0%, rgba(27, 188, 157, 1) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    border-color: radial-gradient(ellipse at center, rgba(170, 202, 41, 1) 0%, rgba(27, 188, 157, 1) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aaca29', endColorstr='#1bbc9d', GradientType=1);
-    /* IE6-9 fallback on horizontal gradient */
     animation-name: rotate-one;
 }
 
-.creative .chart-skills li:nth-child(1) {
+.creative .chart-skills div {
     z-index: 4;
-    border-color: rgb(170, 202, 41);
     animation-name: rotate-two;
 }
 
-.ui-design .chart-skills li:nth-child(1) {
+.ui-design .chart-skills div {
     z-index: 4;
-    border-color: #38bf85;
     animation-name: rotate-three;
 }
 
-.prototypes .chart-skills li:nth-child(1) {
+.prototypes .chart-skills div {
     z-index: 4;
-    border-color: #38bf85;
     animation-name: rotate-four;
 }
 
-.photography .chart-skills li:nth-child(1) {
+.photography .chart-skills div {
     z-index: 4;
-    border-color: #38bf85;
     animation-name: rotate-five;
 }
 
@@ -927,6 +920,11 @@ input[type=search]:focus {
     100% {
         transform: rotate(90deg);
     }
+}
+
+.feature8 p {
+    font-size: 50px;
+    line-height: 1;
 }
 
 /*Start Feature9 */
@@ -979,7 +977,8 @@ address p:nth-child(3) {
 .feature9 .btn {
     margin-top: 20px;
     border-radius: 0px !important;
-    padding: 10px 15px;
+    width: 104px;
+    height: 34px;
     font-size: 14px;
     background-color: #1bbc9d;
     color: #fff;
@@ -987,7 +986,8 @@ address p:nth-child(3) {
 
 .btnPurchaise {
     margin-top: 4px !important;
-    padding: 10px 20px !important;
+    width: 104px;
+    height: 34px;
 }
 
 .feature9 .btn:hover {
@@ -1028,6 +1028,68 @@ address p:nth-child(3) {
 }
 
 /*End Feature9*/
+
+.feature10 .title {
+    font-size: 50px;
+    line-height: normal;
+}
+
+.feature10 p {
+    line-height: normal;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.feature10 .icons div {
+    height: 48px;
+    width: 48px;
+    background-color: #282a2e;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+
+.feature10 .icons div:after {
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 600;
+    position: absolute;
+    color: #4b3f34;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icons .github:after {
+    content: '\f113';
+}
+
+.icons .flickr:after {
+    content: '\f16e';
+}
+
+.icons .vimeo:after {
+    content: '\f27d';
+}
+
+.icons .twitter:after {
+    content: '\f099';
+}
+
+.icons .facebook:after {
+    content: '\f39e';
+}
+
+.icons .google:after {
+    content: '\f0d5';
+}
+
+.icons .pinterest:after {
+    content: '\f231';
+}
+
+.icons .tumblr:after {
+    content: '\f173';
+}
 
 @media (max-width: 992px) {
     .feature1 .col-lg {
@@ -1072,6 +1134,9 @@ address p:nth-child(3) {
         /* center */
         margin: 0 auto;
         left: 6%;
+    }
+    .feature2 .btn:nth-child(1) {
+        margin-right: 0;
     }
     .feature3 .content ul {
         flex-flow: wrap;
