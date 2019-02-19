@@ -308,47 +308,84 @@ input[type=search]:focus {
 
 /* content mansory grid*/
 
-.content .grid {
+.grid {
+    /* center */
     margin: 0 auto;
-    left: 2%;
 }
 
-.content .grid:after {
+/* clearfix */
+
+.grid:after {
     content: '';
     display: block;
     clear: both;
 }
 
-.content .grid-item {
-    width: 140px;
-    height: 50px;
+.grid-item {
+    width: 238px;
+    height: 238px;
     float: left;
-    background: #313337;
-    border: 5px solid #282a2e;
-    border-radius: 5px;
 }
 
-.grid-item--height2 {
-    height: 200px;
+.grid-item .box {
+    background-color: #313337;
+    width: 224px;
+    height: 224px;
 }
 
-.grid-item--height3 {
-    height: 260px;
+.grid-item .box:nth-child(7) {
+    position: relative;
 }
 
-/*end buttons masonry grid*/
+.box .blackbox {
+    position: absolute;
+    top: 47%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    width: 170px;
+    height: 170px;
+    background-color: #000;
+    vertical-align: middle;
+}
+
+/* ---- grid-item ---- */
 
 .feature3 .content .buttons {
     cursor: pointer;
 }
 
-.feature3 .content .buttons .grid-item {
-    color: #fff;
+.feature3 .content .buttons {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
 }
 
-.feature3 .content .buttons .grid-item:hover {
+.feature3 .content .buttons li {
+    display: inline-block;
+    background-color: #313337;
+    width: 104px;
+    height: 34px;
+}
+
+.buttons li:not(:last-child) {
+    margin-right: 6px;
+}
+
+.feature3 .content .buttons .active {
     background-color: #1bbc9d;
+}
+
+.buttons li a {
+    display: block;
+    text-decoration: none;
+    line-height: 32px;
     color: #fff;
+    font-family: "Roboto Light", sans-serif;
+    font-size: 14px;
+}
+
+.feature3 .content .buttons li:hover {
+    background-color: #1bbc9d;
 }
 
 .feature3 .content .grid .grid-item a {
@@ -359,39 +396,6 @@ input[type=search]:focus {
 }
 
 /*end button*/
-
-/*Start boxes masonry grid*/
-
-.boxes .grid {
-    margin: 0 auto;
-}
-
-.boxes .grid:after {
-    content: '';
-    display: block;
-    clear: both;
-}
-
-.boxes .grid-item {
-    width: 180px;
-    height: 120px;
-    float: left;
-    background: #313337;
-    border: 5px solid #282a2e;
-    border-radius: 5px;
-}
-
-.boxes .grid-item:hover {
-    width: 180px;
-    height: 120px;
-    float: left;
-    background: #0d866f;
-    border: 5px solid #282a2e;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/*End boxes mansory grid*/
 
 .arrow,
 .arrow:before {
@@ -1038,18 +1042,20 @@ address p:nth-child(3) {
     line-height: normal;
     font-size: 50px;
     text-transform: capitalize;
+    letter-spacing: 3px;
 }
 
-.feature10 .icons div {
-    height: 48px;
-    width: 48px;
+.feature10 .icons a {
+    height: 36px;
+    width: 36px;
     background-color: #282a2e;
     border-radius: 50%;
     display: inline-block;
     position: relative;
 }
 
-.feature10 .icons div:after {
+.feature10 .icons a:after {
+    cursor: pointer;
     font-family: "Font Awesome 5 Brands";
     font-weight: 600;
     position: absolute;
@@ -1057,6 +1063,14 @@ address p:nth-child(3) {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.icons a {
+    display: block;
+}
+
+.icons a:not(:last-child) {
+    margin-right: 27px;
 }
 
 .icons .github:after {
@@ -1089,6 +1103,77 @@ address p:nth-child(3) {
 
 .icons .tumblr:after {
     content: '\f173';
+}
+
+.feature10 .icons a:hover:after {
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #b0cd3b;
+    color: #282a2e;
+    line-height: 30px;
+}
+
+.feature11 h4 {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 47px;
+}
+
+.feature11 h4:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #424242;
+    bottom: -17px;
+    left: 0%;
+    width: 100%;
+}
+
+.feature11 .tweets,
+.feature11 .posts,
+.feature11 .photoStream {
+    max-width: 270px;
+}
+
+.feature11 ul p {
+    font-family: "Arial Regular", sans-serif;
+    font-size: 13px;
+    margin: 0;
+}
+
+.feature11 ul li {
+    margin-bottom: 20px;
+}
+
+.feature11 ul span {
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.feature11 ul li a {
+    text-decoration: underline;
+    color: #1bbc9d;
+}
+
+.feature11 ul i {
+    color: #b0cd3b;
+}
+
+.feature11 ul {
+    list-style: none;
+    padding-left: 0;
+    color: #747474;
+}
+
+.feature11 .photoes div {
+    margin: 8px;
 }
 
 @media (max-width: 992px) {
