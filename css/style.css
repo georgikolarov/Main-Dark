@@ -107,17 +107,17 @@ body {
 /*Carousel Caption*/
 
 .carousel-caption {
+    max-width: 1000px;
     position: absolute;
-    right: 15%;
     /* bottom: 20px; */
-    top: 50%;
-    left: 15%;
+    top: 50% !important;
+    left: 15% !important;
     z-index: 10;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 0px;
+    bottom: 0px !important;
     color: #fff;
     text-align: left;
-    transform: translate(0%, -50%);
+    transform: translate(0%, -50%) !important;
     /* text-align: center; */
 }
 
@@ -346,6 +346,26 @@ input[type=search]:focus {
     height: 170px;
     background-color: #000;
     vertical-align: middle;
+    display: flex;
+    align-items: center;
+}
+
+.box .blackbox ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 auto;
+}
+
+.box .blackbox ul li:nth-child(1) p {
+    font-family: "Roboto Medium", sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.box .blackbox ul li:nth-child(2) p {
+    font-family: "Roboto Light", sans-serif;
+    font-size: 14px;
+    margin-bottom: 30px;
 }
 
 /* ---- grid-item ---- */
@@ -484,11 +504,7 @@ input[type=search]:focus {
     padding: 0px;
     width: 264px;
     cursor: pointer;
-    margin-bottom: 0;
-}
-
-.feature5 ul:not(:last-child) {
-    margin-right: 70px;
+    margin-bottom: 10px;
 }
 
 .feature5 h2 {
@@ -1052,6 +1068,7 @@ address p:nth-child(3) {
     border-radius: 50%;
     display: inline-block;
     position: relative;
+    margin: 2px;
 }
 
 .feature10 .icons a:after {
@@ -1138,7 +1155,7 @@ address p:nth-child(3) {
 .feature11 .tweets,
 .feature11 .posts,
 .feature11 .photoStream {
-    max-width: 270px;
+    max-width: 275px;
 }
 
 .feature11 ul p {
@@ -1173,7 +1190,29 @@ address p:nth-child(3) {
 }
 
 .feature11 .photoes div {
-    margin: 8px;
+    margin: 0 8px 8px 0;
+}
+
+.feature11>div {
+    padding: 70px 20px;
+}
+
+.footer {
+    background-color: #222327;
+    height: 130px;
+}
+
+.footer .contacts {
+    color: #7f7f80;
+    list-style: none;
+    margin-bottom: 0px;
+    font-family: "Roboto Medium", sans-serif;
+    font-size: 16px;
+    padding: 0;
+}
+
+.contacts li:not(:last-child) {
+    margin-right: 30px;
 }
 
 @media (max-width: 992px) {
@@ -1183,9 +1222,6 @@ address p:nth-child(3) {
     .navbar ul li:last-child {
         margin-right: 2rem !important;
     }
-    .feature5 ul:not(:last-child) {
-        margin-right: 0px;
-    }
     .feature5 .comment .quote {
         padding: 0 20px 0 20px;
         font-size: 50px;
@@ -1193,12 +1229,15 @@ address p:nth-child(3) {
     .feature9 .col-lg-8 {
         padding-bottom: 20px;
     }
+    .carousel-caption h1 {
+        font-size: 40px;
+    }
+    .carousel-caption p {
+        font-size: 30px;
+    }
 }
 
 @media (max-width: 768px) {
-    .carousel-caption {
-        display: none !important;
-    }
     .feature2 .col-lg-12 {
         top: 10%;
         text-align: center;
@@ -1208,6 +1247,12 @@ address p:nth-child(3) {
     .feature6,
     .feature8 {
         text-align: center;
+    }
+    .carousel-caption h1 {
+        font-size: 40px;
+    }
+    .carousel-caption p {
+        font-size: 25px;
     }
 }
 
@@ -1232,5 +1277,14 @@ address p:nth-child(3) {
     }
     .feature5 .comment .quote {
         font-size: 40px;
+    }
+    .carousel-caption {
+        max-width: 200px;
+    }
+    .carousel-caption h1 {
+        font-size: 25px;
+    }
+    .carousel-caption p {
+        font-size: 15px;
     }
 }
